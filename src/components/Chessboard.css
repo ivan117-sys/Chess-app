@@ -1,0 +1,54 @@
+#chessBoard {
+  background-color: bisque;
+  height: 800px;
+  width: 800px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.chess__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+#pawn-promotion-modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+#pawn-promotion-modal.hidden {
+  display: none;
+}
+
+#pawn-promotion-modal > .modal-body {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 400px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 800px;
+
+  background-color: rgba(127, 127, 127, 0.8);
+}
+
+#pawn-promotion-modal > .modal-body > img {
+  height: 120px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+#pawn-promotion-modal > .modal-body > img:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}

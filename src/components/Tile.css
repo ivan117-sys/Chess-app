@@ -1,0 +1,29 @@
+.square {
+  width: 1fr;
+  height: 1fr;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.black__color {
+  background-color: rgb(42, 156, 158);
+}
+
+.white__color {
+  background-color: rgb(209, 241, 240);
+}
+.pieces {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pieces:hover {
+  cursor: pointer;
+}
+
+.pieces:active {
+  cursor: grabbing;
+}
